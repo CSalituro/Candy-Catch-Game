@@ -4,24 +4,14 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    private Vector3 _moveDir;
+    public float speed = 5f;
 
-   // private Rigidbody2D _rb;
-    private float _depth;
-
-    void Start()
+    void Update()
     {
-        Manager.Init(this);
-        Manager.GameMode();
+        float h = Input.GetAxisRaw("Horizontal");
 
-      //  _rb = GetComponent<Rigidbody2D>();
-        _depth = GetComponent<Collider2D>().bounds.size.y;
+        GetComponent<Rigidbody2D>().velocity = new Vector2(h, 0) * speed;
     }
 
-    public void SetMovementDirection(Vector3 newDirection)
-    {
-        _moveDir = newDirection;
-    }
-    
-    
+
 }

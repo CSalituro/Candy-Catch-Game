@@ -4,7 +4,7 @@ using UnityEngine;
 
 public static class Manager
 {
-   private static Controls _controls;
+   /*private static Controls _controls;
 
    public static void Init(Player myPlayer)
    {
@@ -27,6 +27,6 @@ public static class Manager
    {
       _controls.Game.Disable();
       _controls.UI.Enable();
-   }
+   }*/
    
 }

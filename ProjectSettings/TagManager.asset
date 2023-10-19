@@ -41,3 +41,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Candy
+    uniqueID: 900778321
+    locked: 0
+  - name: Player
+    uniqueID: 2297905657
+    locked: 0
